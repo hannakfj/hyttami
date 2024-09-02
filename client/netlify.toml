@@ -1,0 +1,8 @@
+[build]
+  # Definer hvilken kommando som skal brukes for å bygge prosjektet.
+  command = "npm start"
+
+[dev]
+  # Hvis du bruker netlify dev, kan du spesifisere hvilken port `npm start` vil kjøre på.
+  # Dette er typisk port 3000 for mange React/Node.js prosjekter, men det kan variere.
+  port = 3000
