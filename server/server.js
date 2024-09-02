@@ -1,6 +1,7 @@
 const express = require('express');
 const fetch = require('node-fetch');
 const app = express();
+const serverless = require('serverless-http');
 const PORT = process.env.PORT || 3001;
 
 const apiUrl = 'https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=59.78&lon=7.33&altitude=90';
@@ -39,6 +40,5 @@ app.get('/api/weather', async (req, res) => {
     }
 });
 
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
+// Eksporter appen som en serverless function handler
+module.exports.handler = serverless(app);
