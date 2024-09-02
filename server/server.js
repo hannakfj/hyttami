@@ -2,9 +2,14 @@ const express = require('express');
 const fetch = require('node-fetch');
 const app = express();
 const serverless = require('serverless-http');
+const cors = require('cors');
 const PORT = process.env.PORT || 3001;
 
 const apiUrl = 'https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=59.78&lon=7.33&altitude=90';
+
+app.use(cors({
+    origin: '*'
+}));
 
 async function fetchWeatherData() {
     try {
@@ -39,6 +44,15 @@ app.get('/api/weather', async (req, res) => {
         res.status(500).json({ error: error.message });
     }
 });
+
+if(process.env.NODE_ENV === "development"){
+    app.listen(PORT, function(err){
+        if (err) console.log("Error in server setup")
+        console.log("Server listening on Port", PORT);
+
+    })
+}
+console.log(process.env)
 
 // Eksporter appen som en serverless function handler
 module.exports.handler = serverless(app);

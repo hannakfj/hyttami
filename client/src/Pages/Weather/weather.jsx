@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react';
 
+const BASE_URL = process.env.NODE_ENV === "development" ? "http://localhost:3001": "https://hyttamiapi.netlify.app"; 
+
 const Weather = () => {
   const [weatherData, setWeatherData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+
   useEffect(() => {
     const fetchWeather = async () => {
       try {
-        const response = await fetch('/api/weather');
+        const response = await fetch(BASE_URL + '/api/weather');
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
