@@ -1,9 +1,9 @@
 [build]
-command = "npm install && npm run build"  # Build command for client
-publish = "build"  # Folder where the client build files are located
+base = "."  # The base directory is the client folder
+command = "npm install && npm run build"
+publish = "build"  # Output of the build command, where Netlify will serve files from
 
-
-[dev]
-  # Hvis du bruker netlify dev, kan du spesifisere hvilken port `npm start` vil kjøre på.
-  # Dette er typisk port 3000 for mange React/Node.js prosjekter, men det kan variere.
-  port = 3000
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200

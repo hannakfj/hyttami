@@ -1,6 +1,11 @@
 [build]
-command = "npm install && npm run build"  # If you need to run a build step for the server
-publish = "build"  # Publish the built functions to this directory
+command = "npm install && npm run build"  # Modify if needed for your server-side build command
+publish = "build"  # This should point to the build output for your server, e.g., "build" or any other
 
-[functions]
-directory = "functions" 
+[[plugins]]
+package = "@netlify/plugin-functions-install-core"  # Ensures Netlify installs function dependencies
+
+[[redirects]]
+from = "/*"
+to = "/.netlify/functions/server"
+status = 200
