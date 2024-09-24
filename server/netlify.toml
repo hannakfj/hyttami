@@ -1,6 +1,5 @@
 [build]
-  # Definer hvilken kommando som skal brukes for å bygge prosjektet.
-  publish = "."
+command = "npm install && npm run build"
 
 [dev]
   # Hvis du bruker netlify dev, kan du spesifisere hvilken port `npm start` vil kjøre på.
@@ -15,3 +14,6 @@
   from = "/*"
   to = "/.netlify/functions/server"
   status = 200
+
+[[plugins]]
+package = "@netlify/plugin-functions-install-core"
