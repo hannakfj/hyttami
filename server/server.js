@@ -91,9 +91,9 @@ app.get('/api/weather', async (req, res) => {
   }
 });
 
-// Start the server locally or export for serverless deployment
-app.listen(port, () => {
-  console.log(`Server listening on Port ${port}`);
-});
+// // Start the server locally or export for serverless deployment
+// app.listen(port, () => {
+//   console.log(`Server listening on Port ${port}`);
+// });
 
 module.exports.handler = serverless(app);
