@@ -1,7 +1,7 @@
 [build]
-  # Definer hvilken kommando som skal brukes for å bygge prosjektet.
-  publish = "build"
-  command = "npm run build"
+command = "npm install && npm run build"  # Build command for client
+publish = "build"  # Folder where the client build files are located
+
 
 [dev]
   # Hvis du bruker netlify dev, kan du spesifisere hvilken port `npm start` vil kjøre på.

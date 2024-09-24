@@ -1,19 +1,6 @@
 [build]
-command = "npm install && npm run build"
-
-[dev]
-  # Hvis du bruker netlify dev, kan du spesifisere hvilken port `npm start` vil kjøre på.
-  # Dette er typisk port 3000 for mange React/Node.js prosjekter, men det kan variere.
-  port = 3001
+command = "npm install && npm run build"  # If you need to run a build step for the server
+publish = "build"  # Publish the built functions to this directory
 
 [functions]
-    directory = "."
-
-
-[[redirects]]
-  from = "/*"
-  to = "/.netlify/functions/server"
-  status = 200
-
-[[plugins]]
-package = "@netlify/plugin-functions-install-core"
+directory = "functions" 
