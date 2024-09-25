@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Hytteside 🛖
+En nettside som gjør det enkelt å overvåke og administrere hytteaktiviteter. Siden skal bidra til å gi brukerne av hytta en litt smidigere opplevelse⭐️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Siden er under produksjon, men følgende funksjonalitet er implementert så langt💃🏼
+### Funksjonaliteter
+1. **Sjekkliste for utsjekk✅:**
+Hold orden på alt som må gjøres før du forlater hytten.
 
-## Available Scripts
+2. **Handleliste🛒🍜**
+Legg til ting som mangler på hytten, slik at den neste som kommer opp vet hva som trengs. Se listen i sanntid og kryss av når varer er handlet inn.
 
-In the project directory, you can run:
+3. **Registrering av turer i nærområdet🏔️🥾**
+Skriv beskrivelser, gi turene du har gått en vurdering og last opp bilde fra turen.
 
-### `npm start`
+4. **Oversikt over tidligere turer📚⛰️**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+5. **Nedtelling til bakeriets åpning🍰**
+Vis en nedtelling til når det lokale bakeriet åpner eller stenger.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+6. **Værmelding for hytta🌧️🌈**
+Få oppdatert værmelding fra YR basert på hyttens koordinater.
 
-### `npm test`
+## Teknisk
+### Database
+#### MongoDB
+All data om brukere, sjekkliste, handlelister og turer lagres i en MongoDB-database. 
+#### API
+YR sitt vær-API
+#### Frontend
+React.js og Chakra UI
+#### Backend
+Node.js og Express  
+Backend bygget med Node.js og Express for å håndtere API-kall, lagring og oppdatering av informasjon, samt kommunikasjon med databasen og eksterne API-er.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
