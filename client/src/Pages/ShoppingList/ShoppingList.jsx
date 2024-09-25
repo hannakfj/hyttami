@@ -10,7 +10,7 @@ const API_URL = 'http://localhost:3001';
 function ShoppingList() {
   const [items, setItems] = useState([]); // State for shopping list items
   const [newItem, setNewItem] = useState(''); // State for new item input
-
+  const navigate = useNavigate()
 
   useEffect(() => {
     const storedUser = localStorage.getItem('user'); 
@@ -20,7 +20,7 @@ function ShoppingList() {
     }
   }, [navigate]);
 
-  
+
   // Fetch shopping list items from the server when component mounts
   useEffect(() => {
     const fetchItems = async () => {
@@ -74,7 +74,6 @@ function ShoppingList() {
   const textColor = useColorModeValue('gray.800', 'gray.100');
   const buttonGradient = 'linear(to-r, red.400, orange.300, yellow.200)';
   const buttonGradientHover = 'linear(to-r, red.500, orange.400, yellow.300)';
-  const navigate = useNavigate()
 
   return (
     <Box 
