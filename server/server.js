@@ -183,7 +183,6 @@ app.post('/add-cabin', async (req, res) => {
 });
 
 
-
 //get checkout items
 app.get('/checkout-items', async (req, res) => {
   try {
