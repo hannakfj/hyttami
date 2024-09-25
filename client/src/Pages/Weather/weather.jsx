@@ -214,9 +214,6 @@ const Weather = () => {
         </Box>
       )} */}
 
-      <Text mt={6} textAlign="center">
-        Viser temperatur, nedbør, vindstyrke og vindretning de neste 12 timene.
-      </Text>
     </Box>
     </Box>
   );

@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import backgroundImage from '../../assets/background.jpg';
 
 
-const API_URL = 'https://hyttami.vercel.app/'; 
+const API_URL = 'http://localhost:3001'; 
 const userId = JSON.parse(localStorage.getItem('user'))?.userId; // Get userId from localStorage
 
 

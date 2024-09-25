@@ -4,7 +4,7 @@ import TripCard from '../../Components/TripCard/TripCard';
 import { useNavigate } from 'react-router-dom';
 import backgroundImage from '../../assets/background.jpg';
 
-const API_URL = 'https://hyttami.vercel.app/'; // URL til din backend-server
+const API_URL = 'http://localhost:3001'
 
 function UserTrips() {
   const user = JSON.parse(localStorage.getItem('user')); // Ensure this is correct
