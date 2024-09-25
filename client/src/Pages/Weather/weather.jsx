@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 // Register necessary chart components
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
-const BASE_URL = process.env.NODE_ENV === "development" ? "http://localhost:3001": "https://hyttamiapi.netlify.app"; 
+const BASE_URL = process.env.NODE_ENV === "development" ? "http://localhost:3001": "https://hyttami.vercel.app/"; 
 
 const Weather = () => {
   const [weatherData, setWeatherData] = useState([]);
