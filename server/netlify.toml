@@ -1,5 +1,5 @@
 [build]
-command = "npm install && npm run build"  # Modify if needed for your server-side build command
+command = "npm install && npm start"
 publish = "build"  # This should point to the build output for your server, e.g., "build" or any other
 
 [[plugins]]
