@@ -32,6 +32,7 @@ Vis en nedtelling til når det lokale bakeriet åpner eller stenger.
 Få oppdatert værmelding fra YR basert på hyttens koordinater.
 <img src="./client/src/assets/værmelding.png" alt="værmelding" height="300"/>
 
+
 ## Teknisk
 ### Database
 #### MongoDB
@@ -43,4 +44,7 @@ React.js og Chakra UI
 #### Backend
 Node.js og Express  
 Backend bygget med Node.js og Express for å håndtere API-kall, lagring og oppdatering av informasjon, samt kommunikasjon med databasen og eksterne API-er.
+
+
+[Link til nettsiden](https://hyttami-4abr-exkrtkyur-hannakfjs-projects.vercel.app/login)
 
