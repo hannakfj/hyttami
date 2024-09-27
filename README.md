@@ -2,6 +2,10 @@
 En nettside som gjør det enkelt å overvåke og administrere hytteaktiviteter. Siden skal bidra til å gi brukerne av hytta en litt smidigere opplevelse⭐️
 
 Siden er under produksjon, men følgende funksjonalitet er implementert så langt💃🏼
+<img src="./client/src/assets/forsiden.png" alt="forsiden" height="300"/>
+
+
+
 ### Funksjonaliteter
 1. **Sjekkliste for utsjekk✅:**
 Hold orden på alt som må gjøres før du forlater hytten.
