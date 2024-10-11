@@ -45,6 +45,3 @@ React.js og Chakra UI
 Node.js og Express  
 Backend bygget med Node.js og Express for å håndtere API-kall, lagring og oppdatering av informasjon, samt kommunikasjon med databasen og eksterne API-er.
 
-
-[Link til nettsiden](https://hyttami-4abr-exkrtkyur-hannakfjs-projects.vercel.app/login)
-
